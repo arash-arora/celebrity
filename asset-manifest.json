@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/celebrity/static/css/main.4d0b406a.chunk.css",
+    "main.js": "/celebrity/static/js/main.6542a71b.chunk.js",
+    "main.js.map": "/celebrity/static/js/main.6542a71b.chunk.js.map",
+    "runtime-main.js": "/celebrity/static/js/runtime-main.c2227696.js",
+    "runtime-main.js.map": "/celebrity/static/js/runtime-main.c2227696.js.map",
+    "static/js/2.3595c5eb.chunk.js": "/celebrity/static/js/2.3595c5eb.chunk.js",
+    "static/js/2.3595c5eb.chunk.js.map": "/celebrity/static/js/2.3595c5eb.chunk.js.map",
+    "static/js/3.6b38dd14.chunk.js": "/celebrity/static/js/3.6b38dd14.chunk.js",
+    "static/js/3.6b38dd14.chunk.js.map": "/celebrity/static/js/3.6b38dd14.chunk.js.map",
+    "index.html": "/celebrity/index.html",
+    "static/css/main.4d0b406a.chunk.css.map": "/celebrity/static/css/main.4d0b406a.chunk.css.map",
+    "static/js/2.3595c5eb.chunk.js.LICENSE.txt": "/celebrity/static/js/2.3595c5eb.chunk.js.LICENSE.txt",
+    "static/media/video.a2703484.mp4": "/celebrity/static/media/video.a2703484.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2227696.js",
+    "static/js/2.3595c5eb.chunk.js",
+    "static/css/main.4d0b406a.chunk.css",
+    "static/js/main.6542a71b.chunk.js"
+  ]
+}
