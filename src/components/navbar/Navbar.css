@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Container*/
+.container {
+  font-family: "Oswald", sans-serif;
+  /* min-width: 100vh; */
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 15px 0;
+}
+
+/*Navbar*/
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1200;
+  height: 3rem;
+}
+
+.menu {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 4rem;
+  z-index: 999999;
+}
+
+.hamburger-menu {
+  height: 4rem;
+  width: 3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.active .hamburger-menu::before {
+  content: "Close";
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #eee;
+  margin-right: 40px;
+  top: 6px;
+}
+
+.bar {
+  width: 1.9rem;
+  height: 1.5px;
+  border-radius: 2px;
+  background-color: #000;
+  transition: 0.5s;
+  position: relative;
+}
+
+.active .hamburger-menu::before:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+.bar:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+.bar::before,
+.bar::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.bar::before {
+  transform: translateY(-9px);
+}
+
+.bar::after {
+  transform: translateY(9px);
+}
+
+.active .bar {
+  transform: rotate(90deg);
+  background-color: transparent;
+}
+
+.active .bar::before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.active .bar::after {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.active .bar::before,
+.active .bar::after {
+  background-color: #eee;
+}
+
+/*Overlay Header*/
+.site-header-overlay {
+  position: absolute;
+  z-index: 1042;
+  top: 0;
+  left: 0;
+  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  right: 0;
+  height: 100%;
+  /* display: none; */
+  pointer-events: none;
+}
+.active .site-header-overlay {
+  /* display: block; */
+  pointer-events: all;
+}
+
+.overlay-bg {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: -webkit-transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1),
+    -webkit-transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.active .overlay-bg {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.overlay-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.menufull {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  width: 100%;
+  padding-left: 2rem;
+  height: 100vh;
+  display: flex;
+  opacity: 0;
+}
+
+/*Overlay header 1st menu */
+.menu-1stcol {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 35%;
+  -ms-flex: 0 0 35%;
+  flex: 0 0 35%;
+  width: 35vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.menu-links {
+  position: absolute;
+  width: 30%;
+  top: 0;
+  margin-top: 100px;
+  z-index: 999;
+}
+.menu-links ul {
+  list-style-type: none;
+  margin-top: 30px;
+}
+.menu-links a {
+  text-decoration: none;
+  color: black;
+  padding: 0.8rem 0;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: hide 0.5s forwards ease;
+}
+.menu-links a:hover {
+  opacity: 0.3 !important;
+}
+
+.active .menu-links a {
+  animation: appear 0.5s forwards ease var(--i);
+  /* opacity: 1; */
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes hide {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* Overlay header 2nd menu */
+.menu-2ndcol {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 65%;
+  -ms-flex: 0 0 65%;
+  flex: 0 0 65%;
+  width: 65vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.menufull-media {
+  height: 100%;
+}
+.menufull-media img {
+  /* background-image: url(https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 100%;
+  width: 100%;
+}
+
+.active .menufull {
+  opacity: 1;
+  transition: 1s;
+}
+
+@media screen and (max-width: 767px) {
+  .app,
+  .site-header-overlay {
+    min-width: 100vh;
+  }
+  .menu-2ndcol {
+    display: none;
+  }
+  .menufull {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .menu-links li {
+    position: relative;
+    margin: 20px 0;
+  }
+  .menu-links li::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    background: #ececec;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+  }
+  .menu-links li:last-child::after {
+    display: none;
+  }
+  .menu-links a {
+    font-size: 1.8rem;
+  }
+  .active .hamburger-menu::before {
+    color: black;
+    font-weight: 200;
+  }
+  .active .bar::after,
+  .active .bar::before {
+    background: black;
+  }
+
+  .container {
+    min-width: 100%;
+  }
+  .site-header-overlay {
+    min-width: 100%;
+  }
+}
