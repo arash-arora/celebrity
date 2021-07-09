@@ -22,7 +22,7 @@ import {
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
-  const [video, setVideo] = useState(Video1);
+  const [video, setVideo] = useState(Video4);
 
   const onHover = () => {
     setHover(!hover);
@@ -51,7 +51,7 @@ const HeroSection = () => {
       <List>
         <ListItem
           onClick={() => {
-            setVideo(Video1);
+            setVideo(Video4);
           }}>
           <Thumbnail src='https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' />
         </ListItem>
@@ -69,7 +69,7 @@ const HeroSection = () => {
         </ListItem>
         <ListItem
           onClick={() => {
-            setVideo(Video4);
+            setVideo(Video1);
           }}>
           <Thumbnail src={Photo1} />
         </ListItem>
