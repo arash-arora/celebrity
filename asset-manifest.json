@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/celebrity/static/css/main.a8fec0c1.chunk.css",
-    "main.js": "/celebrity/static/js/main.7a4c4de3.chunk.js",
-    "main.js.map": "/celebrity/static/js/main.7a4c4de3.chunk.js.map",
-    "runtime-main.js": "/celebrity/static/js/runtime-main.a841db7f.js",
-    "runtime-main.js.map": "/celebrity/static/js/runtime-main.a841db7f.js.map",
-    "static/js/2.6e737ef8.chunk.js": "/celebrity/static/js/2.6e737ef8.chunk.js",
-    "static/js/2.6e737ef8.chunk.js.map": "/celebrity/static/js/2.6e737ef8.chunk.js.map",
-    "static/js/3.d828f08f.chunk.js": "/celebrity/static/js/3.d828f08f.chunk.js",
-    "static/js/3.d828f08f.chunk.js.map": "/celebrity/static/js/3.d828f08f.chunk.js.map",
+    "main.css": "/celebrity/static/css/main.3620af0c.chunk.css",
+    "main.js": "/celebrity/static/js/main.db58abb4.chunk.js",
+    "main.js.map": "/celebrity/static/js/main.db58abb4.chunk.js.map",
+    "runtime-main.js": "/celebrity/static/js/runtime-main.fd24fc61.js",
+    "runtime-main.js.map": "/celebrity/static/js/runtime-main.fd24fc61.js.map",
+    "static/js/2.b67b7b3d.chunk.js": "/celebrity/static/js/2.b67b7b3d.chunk.js",
+    "static/js/2.b67b7b3d.chunk.js.map": "/celebrity/static/js/2.b67b7b3d.chunk.js.map",
+    "static/js/3.2e9e8a34.chunk.js": "/celebrity/static/js/3.2e9e8a34.chunk.js",
+    "static/js/3.2e9e8a34.chunk.js.map": "/celebrity/static/js/3.2e9e8a34.chunk.js.map",
     "index.html": "/celebrity/index.html",
-    "static/css/main.a8fec0c1.chunk.css.map": "/celebrity/static/css/main.a8fec0c1.chunk.css.map",
-    "static/js/2.6e737ef8.chunk.js.LICENSE.txt": "/celebrity/static/js/2.6e737ef8.chunk.js.LICENSE.txt",
-    "static/media/video.a2703484.mp4": "/celebrity/static/media/video.a2703484.mp4"
+    "static/css/main.3620af0c.chunk.css.map": "/celebrity/static/css/main.3620af0c.chunk.css.map",
+    "static/js/2.b67b7b3d.chunk.js.LICENSE.txt": "/celebrity/static/js/2.b67b7b3d.chunk.js.LICENSE.txt",
+    "static/media/FunFair.f9ecc029.mp4": "/celebrity/static/media/FunFair.f9ecc029.mp4",
+    "static/media/acting.40913dd6.mp4": "/celebrity/static/media/acting.40913dd6.mp4",
+    "static/media/dance.57f7f0bd.mp4": "/celebrity/static/media/dance.57f7f0bd.mp4",
+    "static/media/photo1.766408ee.jpg": "/celebrity/static/media/photo1.766408ee.jpg",
+    "static/media/sailor.a1a115ac.mp4": "/celebrity/static/media/sailor.a1a115ac.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.a841db7f.js",
-    "static/js/2.6e737ef8.chunk.js",
-    "static/css/main.a8fec0c1.chunk.css",
-    "static/js/main.7a4c4de3.chunk.js"
+    "static/js/runtime-main.fd24fc61.js",
+    "static/js/2.b67b7b3d.chunk.js",
+    "static/css/main.3620af0c.chunk.css",
+    "static/js/main.db58abb4.chunk.js"
   ]
 }
