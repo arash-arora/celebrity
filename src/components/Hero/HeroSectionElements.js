@@ -57,7 +57,7 @@ export const HeroContent = styled.div`
   align-items: center;
 
   @media screen and (max-width: 660px) {
-    margin-bottom: 150px;
+    margin-bottom: 250px;
   }
 `;
 
