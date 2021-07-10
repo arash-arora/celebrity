@@ -155,4 +155,9 @@ export const Thumbnail = styled.img`
       width: 150px;
     }
   }
+
+  @media screen and (max-width: 568px) {
+    width: 80px;
+    height: 80px;
+  }
 `;
