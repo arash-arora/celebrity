@@ -61,6 +61,13 @@
   color: #eee;
   margin-right: 40px;
   top: 6px;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .active .hamburger-menu:before {
+    content: "";
+  }
 }
 
 .bar {
