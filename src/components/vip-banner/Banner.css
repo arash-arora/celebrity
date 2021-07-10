@@ -24,6 +24,17 @@
   font-weight: 600;
 }
 
+@media screen and (max-width: 768px) {
+  #bg .content .heading h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #bg .content .heading h1 {
+    font-size: 18px;
+  }
+}
+
 .btn {
   margin: 30px;
 }

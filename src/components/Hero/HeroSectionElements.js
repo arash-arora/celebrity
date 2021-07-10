@@ -55,6 +55,10 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 660px) {
+    margin-bottom: 150px;
+  }
 `;
 
 export const HeroH1 = styled.h1`
@@ -120,7 +124,7 @@ export const List = styled.ul`
   align-items: center;
   grid-gap: 12px;
 
-  @media screen and (max-width: 568px) {
+  @media screen and (max-width: 660px) {
     grid-template-columns: 1fr 1fr;
   }
 `;
