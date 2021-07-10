@@ -6,6 +6,11 @@
   height: 450px;
   background-position: bottom;
 }
+@media screen and (max-width: 768px) {
+  #bg {
+    background-position: top;
+  }
+}
 
 #bg .content {
   display: flex;
